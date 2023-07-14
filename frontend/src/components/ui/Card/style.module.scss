@@ -1,0 +1,18 @@
+.container {
+  background-color: var(--grey-light);
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  border: 0.3rem dashed var(--black);
+  box-shadow: 15px 20px 5px 5px rgba(0, 0, 0, 0.5);
+
+  @media (max-width: 980px) {
+    width: 90% !important;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
+}

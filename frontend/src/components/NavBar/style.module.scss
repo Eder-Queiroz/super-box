@@ -1,0 +1,73 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: "Shrikhand";
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.iconsNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  svg {
+    cursor: pointer;
+  }
+
+  svg:hover {
+    opacity: 0.6;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.iconsNavResponsive {
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  div.container {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3rem;
+    height: 100vh;
+    background-color: var(--grey-light);
+    -webkit-box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    display: flex;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+
+    svg {
+      cursor: pointer;
+    }
+
+    svg:hover {
+      opacity: 0.6;
+    }
+  }
+
+  div.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+  }
+}

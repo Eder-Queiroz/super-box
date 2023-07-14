@@ -1,0 +1,64 @@
+.filterWrapper {
+  font-family: "Press Start 2P";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    margin-bottom: 10px;
+    margin-right: 8px;
+  }
+}
+
+.filterForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  div.wrapper {
+    font-family: "Press Start 2P";
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    label {
+      width: 14px;
+      height: 14px;
+      border: 2px solid #000;
+      cursor: pointer;
+      border-radius: 2px;
+      position: relative;
+      background-color: transparent;
+      svg {
+        position: absolute;
+        top: -4px;
+        right: -4px;
+      }
+    }
+  }
+}
+
+.filterChecked {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  input[type="number"],
+  input[type="text"] {
+    width: 100%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  div {
+    font-family: "Press Start 2P";
+    font-size: 0.8rem;
+  }
+}

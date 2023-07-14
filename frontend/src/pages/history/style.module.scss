@@ -1,0 +1,63 @@
+.historyContainer {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 2rem;
+  min-height: calc(100vh - 90.4px);
+  padding: 0 4rem 3rem 2rem;
+
+  h2 {
+    font-family: "Press Start 2P";
+  }
+
+  .containerBtn {
+    align-self: self-start;
+    button {
+      width: 150px;
+      font-family: "Press Start 2P";
+      font-size: 0.8rem;
+      display: none;
+
+      cursor: pointer;
+
+      svg {
+        margin-right: 0.5rem;
+        margin-bottom: 0.2rem;
+        rotate: 270deg;
+      }
+    }
+  }
+
+  .mobileScreen {
+    background-color: var(--grey-light);
+    position: absolute;
+    left: 0;
+    min-height: calc(100vh - 90.4px);
+    z-index: 10;
+    padding: 2rem;
+    -webkit-box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.75);
+    display: none;
+  }
+
+  @media (max-width: 1280px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+
+    div[type="fullScreen"] {
+      display: none;
+    }
+
+    div[type="responsive"] {
+      width: 80%;
+    }
+
+    .containerBtn {
+      button {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.inputs {
+  color: var(--black);
+  background-color: var(--grey-dark);
+  width: 100%;
+  height: 46px;
+  border: 2px solid var(--black);
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: "Press Start 2P";
+
+  &:disabled {
+    background-color: var(--grey-dark-700);
+    text-align: center;
+    color: var(--white);
+  }
+}

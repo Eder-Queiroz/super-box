@@ -1,0 +1,47 @@
+.containerLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+}
+
+.title {
+  font-family: "Shrikhand";
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+  width: 90%;
+  text-align: center;
+  font-size: 8rem;
+  color: #000;
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+}
+
+.formLogin {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    font-family: "Libre Barcode 39 Extended";
+    font-size: 1.4rem;
+  }
+  a {
+    font-size: 1rem;
+    font-family: "Press Start 2P";
+    cursor: pointer;
+  }
+}
